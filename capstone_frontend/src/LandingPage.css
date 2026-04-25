@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: #F7F6F3;
+  overflow-x: hidden;
+}
+
+/* ================= VARIABLES ================= */
+
+:root {
+  --primary: #534AB7;
+  --primary-light: #EEEDFE;
+
+  --accent-teal: #0F6E56;
+  --accent-teal-light: #E1F5EE;
+
+  --accent-amber: #854F0B;
+  --accent-amber-light: #FAEEDA;
+
+  --text: #1A1A1A;
+  --text-muted: #6B6B68;
+  --bg: #F7F6F3;
+  --border: #D4D2CB;
+}
+
+/* ================= MAIN ================= */
+
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   /* ✅ CENTER EVERYTHING */
+  gap: 40px;                 /* ✅ clean spacing */
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  text-align: center;
+}
+
+.logo {
+  font-size: 4.5rem;   /* ❌ was 8rem → too big */
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--primary);
+}
+
+/* ================= WRAPPER ================= */
+
+.steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ================= GRID ================= */
+
+.steps-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* ================= CARDS ================= */
+
+.step-card {
+  width: 260px;
+  height: 260px;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 18px;
+  transition: all 0.25s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ================= ICON COLORS ================= */
+
+.step-card:nth-child(1) .icon {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.step-card:nth-child(2) .icon {
+  color: var(--accent-teal);
+  background: var(--accent-teal-light);
+}
+
+.step-card:nth-child(3) .icon {
+  color: var(--accent-amber);
+  background: var(--accent-amber-light);
+}
+
+/* ================= ICON ================= */
+
+.icon {
+  font-size: 2rem;
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= TEXT ================= */
+
+.step-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.step-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ================= BUTTON ================= */
+
+.try-now-btn {
+  background: var(--primary);
+  color: white;
+  padding: 16px 50px;   /* ❌ was HUGE */
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.try-now-btn:hover {
+  transform: scale(1.05);
+}
