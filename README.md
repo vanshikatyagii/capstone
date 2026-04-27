@@ -78,7 +78,7 @@ The system supports **three pipelines (v1, v2, v3)** with increasing levels of s
 
     git clone <https:github.com/vanshikatyagii/capstone.git>
     cd capstone
-###🧪 Backend Setup (Flask)
+### 🧪 Backend Setup (Flask)
 
 ### 📌 Navigate to backend
 
